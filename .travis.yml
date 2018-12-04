@@ -3,8 +3,6 @@ dist: xenial
 language: node_js
 node_js:
 - "8"
-install:
-- npm install
 script:
 - echo "skipping tests"
 branches:
