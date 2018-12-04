@@ -1,0 +1,19 @@
+sudo: false
+dist: xenial
+language: node_js
+node_js:
+- "8"
+install:
+- npm install
+branches:
+  only:
+  - master
+jobs:
+  include:
+  - stage: deploy
+    deploy:
+      skip_cleanup: true
+      provider: script
+      script: bash scripts/travis_deploy.sh
+      on:
+        branch: master

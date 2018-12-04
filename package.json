@@ -6,12 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": ">=6.3.0"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/santthosh/aws-es-kibana.git"
+    "url": "git+https://github.com/Amit-A/aws-es-kibana.git"
   },
   "keywords": [
     "AWS",
@@ -23,11 +20,6 @@
   ],
   "author": "santthosh",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/santthosh/aws-es-kibana/issues"
-  },
-  "homepage": "https://github.com/santthosh/aws-es-kibana#readme",
-  "preferGlobal": true,
   "bin": {
     "aws-es-kibana": "index.js"
   },
