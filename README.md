@@ -14,16 +14,20 @@ This is a simpler version of [aws-es-kibana](https://github.com/santthosh/aws-es
 
 Run the docker container:
 
-	docker run \
-    -e AWS_ACCESS_KEY_ID='<Key ID>' \
-    -e AWS_SECRET_ACCESS_KEY='<Key>' \
-    -p 127.0.0.1:9200:9200 \
-    Amit-A/aws-es-kibana -b 0.0.0.0 <cluster-endpoint>
+```bash
+docker run \
+  -e AWS_ACCESS_KEY_ID='<Key ID>' \
+  -e AWS_SECRET_ACCESS_KEY='<Key>' \
+  -p 127.0.0.1:9200:9200 \
+  amitakumar/aws-es-kibana -b 0.0.0.0 <cluster-endpoint>
+```
 
 If you want to protect your endpoint with basic auth, add:
 
-    -e USER='<HTTP Auth Username>' \
-    -e PASSWORD='<HTTP Auth Password>' \
+```bash
+  -e USER='<HTTP Auth Username>' \
+  -e PASSWORD='<HTTP Auth Password>' \
+```
 
 ## Credits
 
