@@ -160,7 +160,7 @@ proxy.on('proxyReq', function (proxyReq, req) {
     request.headers = {};
   }
   request.headers['presigned-expires'] = false;
-  request.headers['Host'] = ENDPOINT.split('://')[0];
+  request.headers['Host'] = endpoint.hostname;
   const signer = new AWS.Signers.V4(request, 'es');
   signer.addAuthorization(credentials, new Date());
   proxyReq.setHeader('Host', request.headers['Host']);
